@@ -9,16 +9,3 @@ Targets the ATMega328P MCU.
 - The **operation** byte is stored at **$1000**. It should be a 0x04 for sum and 0x02 for subtraction.
 
 [Gerd's AVR Simulator](http://www.avr-asm-tutorial.net/avr_sim/index_en.html#download) was used to test the program.
-
----
-
-# interrupts-gpio
-An 8-bit AVR assembler program made as an exercise to learn to use external interrupts and read/write to GPIO in assembly.
-Targets the ATMega328P MCU.
-
-- when an **rising edge** is detected in **PD3**, **INT1** interrupt will be triggered and a 50ms pulse will be outputted to **PB5**. 
-- when and any change is detected in **PB1**, **PCINT1** interrupt will be triggered. The handler checks if it was a **falling edge**, and if true, a 100ms pulse will be outputted to **PB5**.
-
-
-The program was compilled with Microchip's XC8.
-
