@@ -1,5 +1,5 @@
-# avr_64bit_sum
-An 8-bit AVR assembly program to sum or subtract two 64 bit integers stored in memory. Made as an exercise to mainly practice subroutines calling with parameters passed via stack, and loading/storing to SRAM.
+# avr-64bit-sum
+An AVR assembler program to sum or subtract two 64 bit integers stored in memory. Made as an exercise mainly to practice calling subroutines with parameters passed via stack, and loading/storing to SRAM.
 Targets the ATMega328P MCU.
 
 ### Addresses and operands

@@ -1,5 +1,5 @@
-# avr_64bit_sum
-An 8-bit AVR assembly program to sum or subtract two 64 bit integers stored in memory. Made as an exercise to mainly practice subroutines calling with parameters passed via stack, and loading/storing to SRAM.
+# avr-64bit-sum
+An AVR assembler program to sum or subtract two 64 bit integers stored in memory. Made as an exercise mainly to practice calling subroutines with parameters passed via stack, and loading/storing to SRAM.
 Targets the ATMega328P MCU.
 
 ### Addresses and operands
@@ -13,12 +13,11 @@ Targets the ATMega328P MCU.
 ---
 
 # interrupts-gpio
-An 8-bit AVR assembler program made as an exercise to learn to use external interrupts and read/write to GPIO in assembly.
+An AVR assembler program made as an exercise to learn to use external interrupts and read/write to GPIO in assembly.
 Targets the ATMega328P MCU.
 
-- when an **rising edge** is detected in **PD3**, **INT1** interrupt will be triggered and a 50ms pulse will be outputted to **PB5**. 
-- when and any change is detected in **PB1**, **PCINT1** interrupt will be triggered. The handler checks if it was a **falling edge**, and if true, a 100ms pulse will be outputted to **PB5**.
+- when a **rising edge** is detected in **PD3**, **INT1** interrupt will be triggered and a 50ms pulse will be output to **PB5**. 
+- when and any change is detected in **PB1**, **PCINT1** interrupt will be triggered. The handler checks if it was a **falling edge**, and if true, a 100ms pulse will be output to **PB5**.
 
 
-The program was compilled with Microchip's XC8.
 
